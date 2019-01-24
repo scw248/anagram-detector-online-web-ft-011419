@@ -12,7 +12,7 @@ class Anagram
   array.each do |word|
     letters_array = word.split('')
     if letters_array.sort == @name.split('').sort
-      return word
+      return [word]
     else
       return []
     end
