@@ -3,7 +3,7 @@ require "pry"
 class Anagram
   
   attr_accessor :name
-  
+  binding.pry
   def initialize(name)
   end
   
