@@ -8,7 +8,7 @@ class Anagram
     @name = name
   end
   
-  def self.match(array)
+  def match(array)
   array.each do |word|
      binding.pry
     letters_array = word.split('')
