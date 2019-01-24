@@ -9,14 +9,14 @@ class Anagram
   end
   
   def match(array)
+  answer_array = []
   array.each do |word|
     letters_array = word.split('')
     if letters_array.sort == @name.split('').sort
       binding.pry
-      return [word]
-    else
-      return []
+      answer_array << word
     end
   end
+  answer_array
   end
 end
