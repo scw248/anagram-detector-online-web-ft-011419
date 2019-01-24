@@ -6,13 +6,13 @@ class Anagram
   attr_accessor :name
   end
   
-  self.match(array)
+  def self.match(array)
   array.each do |word|
     letters_array = word.split('')
     if letters_array.sort = @name.split('').sort
-      word
+      return word
     else
-      []
+      return []
     end
   end
   end
