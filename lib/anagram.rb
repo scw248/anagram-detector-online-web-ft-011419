@@ -3,8 +3,9 @@ require "pry"
 class Anagram
   
   attr_accessor :name
-  binding.pry
+  
   def initialize(name)
+    @name = name
   end
   
   def self.match(array)
